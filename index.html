@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' lang='pt-br'>
+  <link rel="stylesheet" href="main.css">
+  <script src="index.js"></script>
+  <title>Calculadora PI</title>
+
+  <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/2891/2891382.svg">
+</head>
+
+<body>
+  <div>
+    <div class='main'>
+      <form name='form'>
+        <input class="textview" name='textview' disabled>
+      </form>
+      <table>
+        <td>
+          <input type="button" class='button' onclick="insert('/')" value="/">
+          <input type="button" class='button' onclick="insert('x')" value="x">
+          <input type="button" class='button back' onclick="back()" value="">
+          <input type="button" class='button cls' onclick='c()' value="C">
+        </td>
+        <tr>
+          <td>
+            <input type="button" class='button' onclick="insert(7)" value="7">
+            <input type="button" class='button' onclick="insert(8)" value="8">
+            <input type="button" class='button' onclick="insert(9)" value="9">
+            <input type="button" class='button' onclick="insert('+')" value="+">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class='button' onclick="insert(4)" value="4">
+            <input type="button" class='button' onclick="insert(5)" value="5">
+            <input type="button" class='button' onclick="insert(6)" value="6">
+            <input type="button" class='button' onclick="insert('-')" value="-">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class='button' onclick="insert(1)" value="1">
+            <input type="button" class='button' onclick="insert(2)" value="2">
+            <input type="button" class='button' onclick="insert(3)" value="3">
+            <input type="button" class='button' onclick='equal()' value="=">
+          </td>
+        </tr>
+        <tr>
+          <td class="separate">
+            <input type='button' value='0' onclick="insert(0)" class='button' id='n0'>
+            <input type='button' value=',' onclick="insert('.')" class='button' id='n0'>
+          </td>
+        </tr>
+        </form>
+    </div>
+  </div>
+</body>
+
+</html>
